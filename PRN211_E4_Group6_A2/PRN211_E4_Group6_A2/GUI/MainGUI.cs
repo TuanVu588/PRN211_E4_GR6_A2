@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MusicStoreWin.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,6 +24,34 @@ namespace PRN211_E4_Group6_A2.GUI
             
             loginGUI.Show();
 
+        }
+
+        private void MainGUI_Activated(object sender, EventArgs e)
+        {
+            if(Settings.UserName != null && Settings.UserName != " ")
+            {
+                loginToolStripMenuItem.Text = $"Logout({Settings.UserName})";
+            }
+            else
+            {
+                loginToolStripMenuItem.Text = $"Login";
+            }
+            if (Settings.Role == 1) albumsToolStripMenuItem.Visible = true;
+            else albumsToolStripMenuItem.Visible = false;
+            ShoppingCart cart = ShoppingCart.GetCart();
+            int count = cart.GetCount();
+            cartToolStripMenuItem.Text = $"Cart {count}";
+        }
+
+        private void shoppingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShoppingGUI shoppingGUI = new ShoppingGUI();
+            shoppingGUI.TopLevel = false;
+            shoppingGUI.FormBorderStyle = FormBorderStyle.None;
+            shoppingGUI.Show();
+
+            toolStripContainer1.ContentPanel.Controls.Clear();
+            toolStripContainer1.ContentPanel.Controls.Add(shoppingGUI);
         }
     }
 }

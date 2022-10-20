@@ -36,6 +36,7 @@
             this.shoppingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.albumsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
@@ -76,7 +77,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.shoppingToolStripMenuItem,
             this.cartToolStripMenuItem,
-            this.loginToolStripMenuItem});
+            this.loginToolStripMenuItem,
+            this.albumsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -88,12 +90,13 @@
             this.shoppingToolStripMenuItem.Name = "shoppingToolStripMenuItem";
             this.shoppingToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
             this.shoppingToolStripMenuItem.Text = "Shopping";
+            this.shoppingToolStripMenuItem.Click += new System.EventHandler(this.shoppingToolStripMenuItem_Click);
             // 
             // cartToolStripMenuItem
             // 
             this.cartToolStripMenuItem.Name = "cartToolStripMenuItem";
-            this.cartToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
-            this.cartToolStripMenuItem.Text = "Cart(0)";
+            this.cartToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
+            this.cartToolStripMenuItem.Text = "Cart";
             // 
             // loginToolStripMenuItem
             // 
@@ -101,6 +104,12 @@
             this.loginToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.loginToolStripMenuItem.Text = "Login";
             this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
+            // 
+            // albumsToolStripMenuItem
+            // 
+            this.albumsToolStripMenuItem.Name = "albumsToolStripMenuItem";
+            this.albumsToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.albumsToolStripMenuItem.Text = "Albums";
             // 
             // toolStrip1
             // 
@@ -170,6 +179,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainGUI";
             this.Text = "MainGUI";
+            this.Activated += new System.EventHandler(this.MainGUI_Activated);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
@@ -199,5 +209,6 @@
         private ToolStripButton toolStripButton2;
         private ToolStripButton toolStripButton3;
         private ToolStripContainer toolStripContainer1;
+        private ToolStripMenuItem albumsToolStripMenuItem;
     }
 }
