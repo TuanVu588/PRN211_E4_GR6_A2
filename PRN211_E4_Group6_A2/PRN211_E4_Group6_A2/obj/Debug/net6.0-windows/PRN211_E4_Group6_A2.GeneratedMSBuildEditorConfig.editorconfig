@@ -1,0 +1,16 @@
+is_global = true
+build_property.ApplicationManifest = 
+build_property.StartupObject = 
+build_property.ApplicationDefaultFont = 
+build_property.ApplicationHighDpiMode = 
+build_property.ApplicationUseCompatibleTextRendering = 
+build_property.ApplicationVisualStyles = 
+build_property.TargetFramework = net6.0-windows
+build_property.TargetPlatformMinVersion = 7.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PRN211_E4_Group6_A2
+build_property.ProjectDir = C:\Users\Vi Tuan Vu\OneDrive\Documents\GitHub\PRN211_E4_GR6_A2\PRN211_E4_Group6_A2\PRN211_E4_Group6_A2\
