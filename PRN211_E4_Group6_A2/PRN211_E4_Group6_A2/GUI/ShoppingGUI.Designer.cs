@@ -107,6 +107,7 @@
             this.cbGenre.Name = "cbGenre";
             this.cbGenre.Size = new System.Drawing.Size(121, 23);
             this.cbGenre.TabIndex = 8;
+            this.cbGenre.SelectedIndexChanged += new System.EventHandler(this.comGenre_SelectedIndexChanged);
             // 
             // ShoppingGUI
             // 
