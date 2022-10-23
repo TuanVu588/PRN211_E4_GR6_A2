@@ -80,16 +80,29 @@ namespace PRN211_E4_Group6_A2.GUI
                 lblArtis.Location = new Point(90, 130);
                 groupBox.Controls.Add(lblArtis);
 
-                Button btn = new Button();
-                btn.AutoSize = true;
-                btn.Text = "Add to cart";
-                btn.Location = new Point(80, 150);
-                //btn.Click += btn_click;
-                groupBox.Controls.Add(btn);
+                Button btnAdd = new Button();
+                btnAdd.Name = $"btn{album.AlbumId}";
+                btnAdd.Text = "Add to cart";
+                btnAdd.BackColor = Color.Blue;
+                btnAdd.ForeColor = Color.White;
+                btnAdd.AutoSize = true;
+                btnAdd.Location = new Point(80,150);
+                groupBox.Controls.Add(btnAdd);
+                btnAdd.Click += BtnAdd_Click;
 
-                panel1.Controls.Add(groupBox);
                 i++;
+                panel1.Controls.Add(groupBox);            
             }
+        }
+
+        private void BtnAdd_Click(object? sender, EventArgs e)
+        {
+            int albumId = int.Parse(((Button)sender).Name.Substring(3));
+            MessageBox.Show($"AlbumId = {albumId}");
+            Album album = context.Albums.Find(albumId);
+
+            ShoppingCart shoppingCart = ShoppingCart.GetCart();
+            shoppingCart.AddToCart(album);
         }
 
         public void bindPanelSearch(int pageIndex)
@@ -143,13 +156,17 @@ namespace PRN211_E4_Group6_A2.GUI
                 lblArtis.Location = new Point(100, 130);
                 groupBox.Controls.Add(lblArtis);
 
-                Button btn = new Button();
-                btn.AutoSize = true;
-                btn.Text = "Add to cart";
-                btn.Location = new Point(80, 150);
-                groupBox.Controls.Add(btn);
-                panel1.Controls.Add(groupBox);
+                Button btnAdd = new Button();
+                btnAdd.Name = $"btn{album.AlbumId}";
+                btnAdd.Text = "Add to cart";
+                btnAdd.BackColor = Color.Blue;
+                btnAdd.ForeColor = Color.White;
+                btnAdd.AutoSize = true;
+                btnAdd.Location = new Point(80,150);
+                groupBox.Controls.Add(btnAdd);
+                btnAdd.Click += BtnAdd_Click;
                 i++;
+                panel1.Controls.Add(groupBox);
             }
         }
 
