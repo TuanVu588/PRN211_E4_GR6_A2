@@ -113,3 +113,5 @@ C:\Users\Vi Tuan Vu\OneDrive\Documents\GitHub\PRN211_E4_GR6_A2\PRN211_E4_Group6_
 C:\Users\Vi Tuan Vu\OneDrive\Documents\GitHub\PRN211_E4_GR6_A2\PRN211_E4_Group6_A2\PRN211_E4_Group6_A2\obj\Debug\net6.0-windows\PRN211_E4_Group6_A2.genruntimeconfig.cache
 C:\Users\Vi Tuan Vu\OneDrive\Documents\GitHub\PRN211_E4_GR6_A2\PRN211_E4_Group6_A2\PRN211_E4_Group6_A2\obj\Debug\net6.0-windows\ref\PRN211_E4_Group6_A2.dll
 C:\Users\Vi Tuan Vu\OneDrive\Documents\GitHub\PRN211_E4_GR6_A2\PRN211_E4_Group6_A2\PRN211_E4_Group6_A2\obj\Debug\net6.0-windows\PRN211_E4_Group6_A2.GUI.ShoppingGUI.resources
+C:\Users\Vi Tuan Vu\OneDrive\Documents\GitHub\PRN211_E4_GR6_A2\PRN211_E4_Group6_A2\PRN211_E4_Group6_A2\obj\Debug\net6.0-windows\PRN211_E4_Group6_A2.GUI.CheckOutGUI.resources
+C:\Users\Vi Tuan Vu\OneDrive\Documents\GitHub\PRN211_E4_GR6_A2\PRN211_E4_Group6_A2\PRN211_E4_Group6_A2\obj\Debug\net6.0-windows\PRN211_E4_Group6_A2.GUI.CartGUI.resources

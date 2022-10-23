@@ -75,5 +75,11 @@ namespace PRN211_E4_Group6_A2.GUI
             Settings.CartId = null;
             cartToolStripMenuItem.Text = "Cart (0)";
         }
+
+        private void cartToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CartGUI cartGUI = new CartGUI();
+            cartGUI.Show();
+        }
     }
 }
